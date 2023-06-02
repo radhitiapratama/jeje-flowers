@@ -22,9 +22,7 @@ let btnFlower = document.querySelector(".btn-flower");
 let textPage = document.querySelector(".text-page");
 
 btnFlower.addEventListener("click", function () {
-    let remove = document.querySelector(".flower-page.remove");
-    if (remove) {
-        remove.classList.remove("remove");
-    }
+    let flowerPage = document.querySelector(".flower-page");
+    flowerPage.style.display = "flex";
     textPage.style.display = "none";
 });

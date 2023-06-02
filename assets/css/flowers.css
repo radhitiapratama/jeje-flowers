@@ -10,6 +10,10 @@
   --dark-color: #000;
 }
 
+.remove {
+  display: none;
+}
+
 .flower-page {
   display: flex;
   align-items: flex-end;
