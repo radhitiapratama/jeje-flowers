@@ -1,2 +1,2 @@
 # Flowers for Jeje
-website https://radhitiapratama.github.io/jeje-flowers
+https://radhitiapratama.github.io/jeje-flowers
