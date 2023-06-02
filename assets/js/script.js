@@ -20,9 +20,9 @@ document.onkeydown = (e) => {
 
 let btnFlower = document.querySelector(".btn-flower");
 let textPage = document.querySelector(".text-page");
+let flowerPage = document.querySelector(".flower-page");
 
 btnFlower.addEventListener("click", function () {
-    let flowerPage = document.querySelector(".flower-page");
     flowerPage.style.display = "flex";
     textPage.style.display = "none";
 });
