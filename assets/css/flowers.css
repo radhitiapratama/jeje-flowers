@@ -10,7 +10,7 @@
   --dark-color: #000;
 }
 
-body {
+.flower-page {
   display: flex;
   align-items: flex-end;
   justify-content: center;
