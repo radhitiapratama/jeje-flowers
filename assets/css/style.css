@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.remove {
+    display: none;
+}
+
+.text-page {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0, 5, 12);
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.container span {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.container .bottom span {
+    animation: neon 2s ease-in-out infinite;
+
+}
+
+.container .top span {
+    color: #fff;
+    text-shadow: 0px 0px 12px pink, 0px 0px 25px pink, 0px 0px 75px pink, 0px 0px 100px pink;
+}
+
+.container .top,
+.container .bottom {
+    text-align: center;
+}
+
+@keyframes neon {
+
+    0%,
+    100% {
+        color: #fff;
+        text-shadow: 0px 0px 12px pink, 0px 0px 25px pink, 0px 0px 75px pink, 0px 0px 100px pink;
+    }
+
+    10%,
+    90% {
+        color: rgb(37, 36, 36);
+        text-shadow: none;
+    }
+}
+
+.container .bottom span:nth-child(2) {
+    animation-delay: .20s;
+}
+
+.container .bottom span:nth-child(3) {
+    animation-delay: .40s;
+}
+
+.container .bottom span:nth-child(4) {
+    animation-delay: .60s;
+}
+
+.container .bottom span:nth-child(5) {
+    animation-delay: .80s;
+}
+
+.btn-flower {
+    position: relative;
+    font-size: 1.2rem;
+    color: rgb(214, 214, 214);
+    background: none;
+    border: none;
+    transition: .5s;
+    padding: 15px 25px;
+    overflow: hidden;
+}
+
+.btn-flower:hover {
+    background: rgb(255, 48, 93);
+    box-shadow: 0px 0px 25px rgb(255, 48, 93),
+        0px 0px 50px rgb(255, 48, 93),
+        0px 0px 75px rgb(255, 48, 93),
+        0px 0px 250px rgb(255, 48, 93);
+}
+
+.btn-flower span {
+    position: absolute;
+    display: block;
+}
+
+.btn-flower span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(255, 48, 93));
+    animation: top-animate 1s linear infinite;
+}
+
+@keyframes top-animate {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.btn-flower span:nth-child(2) {
+    top: 100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(255, 48, 93));
+    animation: right-animate 1s linear infinite;
+    animation-delay: 1.50s;
+}
+
+@keyframes right-animate {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.btn-flower span:nth-child(3) {
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(255, 48, 93));
+    animation: bottom-animate 1s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes bottom-animate {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+.btn-flower span:nth-child(4) {
+    left: 0;
+    bottom: 100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(255, 48, 93));
+    animation: left-animate 1s linear infinite;
+    animation-delay: 2.50s;
+}
+
+@keyframes left-animate {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
